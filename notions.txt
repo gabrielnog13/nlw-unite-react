@@ -1,0 +1,22 @@
+//Componentes (formas de separar a aplicação em vários blocos == funções que retornam html / usado para elementos que se repetem, que são parecidos e se repetem, ou coisas que são independentes uma da outra / todo componente precisa ter necessariamente a primeira letra maiúscula / todo componente pode receber atributos == propriedades do componente) e Propriedades (São os atributos do componente)
+
+//O tailwind css é uma ferramenta de utility classes, ou seja, são basicamente várias classes que vocÊ pode colocar dentro de um elemento html e cada uma dessas classes adiciona um estilo diferente para aquele elemento, ou seja, o html fica grande mas como estamos utilizando react nesse projeto, agt separa a aplicação em vários componentes menores e isso acaba não sendo tão prejudicial e nem tão perceptível
+//o tailwind funciona da seguinte forma: se eu quero adicionar uma cor de fundo por exemplo, eu coloco 
+//interface MeuBotaoProps {
+  texto: string
+}
+
+function MeuBotao(props: MeuBotaoProps) {
+  return <button className="bg-orange-400 h-10 px-3 rounded font-medium">{props.texto}</button>
+}
+
+export function App() {
+ return (
+  <div className="flex gap-2">
+    <MeuBotao texto="Clique Aqui" />
+    <MeuBotao texto="Botão 2" />
+    <MeuBotao texto="Botão 3" />
+    <MeuBotao texto="Cuida" />
+  </div>
+ )
+}
