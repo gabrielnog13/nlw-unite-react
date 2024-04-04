@@ -1,4 +1,4 @@
-// JSX - possibilidade de escrever html diretamente dentro do js - JSX == JavaScript XML
+//JSX - possibilidade de escrever html diretamente dentro do js - JSX == JavaScript XML
 //TSX == TypeScript XML
 import nlwUniteIcon from "../assets/nwl-unite-icon.svg"
 import { NavLink } from "./nav-link"

@@ -22,3 +22,5 @@ export function App() {
 }
 
 //a forma mais fácil de se enxergar um componente no react é percebendo coisas que se repetem, que se repetem de uma maneira visual e muito comum
+
+//estado
