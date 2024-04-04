@@ -1,6 +1,7 @@
 // JSX - possibilidade de escrever html diretamente dentro do js - JSX == JavaScript XML
 //TSX == TypeScript XML
 import nlwUniteIcon from "../assets/nwl-unite-icon.svg"
+import { NavLink } from "./nav-link"
 
 export function Header() {
     return (
@@ -9,7 +10,8 @@ export function Header() {
 
             <nav className="flex itens-center gap-5">
                 <a href="" className="font-medium text-sm text-zinc-300">Eventos</a>
-                <a href="" className="font-medium text-sm">Participantes</a>
+               <NavLink href="/eventos">Eventos</NavLink>
+               <NavLink href="/participantes">Participantes</NavLink>
             </nav>
         </div>
     )
